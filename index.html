@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <div class="title-container">
+      <img src="stmn_logo.png" width="100"/>
+      <p>Stackmemento</p>
+    </div>
+
+    <div class="login-container">
+      <p>Login :</p>
+      <form>
+
+        <label for="email">Email : </label>
+        <input class="email-input" type="email"/>
+
+        <label for="password">Password : </label>
+        <input class="password-input" type="password"/>
+
+        <div><!-- palcehoder --></div>
+        <div class="password-toggle">Show password</div>
+
+      </form>
+
+      <button class="submit-button">Login</button>
+    </div>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>

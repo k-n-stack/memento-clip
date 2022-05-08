@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Roboto";
+  src: 
+    url("fonts/Roboto-Regular.ttf") format("truetype");
+
+ }
+ 
+
+html, body {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: radial-gradient(ellipse at -400% -400%, #3261cf 50%, transparent), radial-gradient(ellipse at 150% 150%, #694896 -30%, white 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-container {
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding: 30px 40px 60px 40px;
+  background-color: #FFFFFF88;
+  border-radius: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-container {
+  font-weight: bold;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container > p {
+  margin-top: 5px;
+  color: #1e3977;
+}
+
+.login-container > form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login-container > form > label {
+  font-size: 14px;
+  margin-right: 10px;
+  justify-self: end;
+  align-self: center;
+}
+
+.login-container > button {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  align-self: flex-end;
+  background-color: #99D17E;
+  cursor: pointer;
+}
+
+.password-toggle {
+  justify-self: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  color: #3261cf;
+}
+
