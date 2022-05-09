@@ -3,7 +3,7 @@
   src: 
     url("fonts/Roboto-Regular.ttf") format("truetype");
 
- }
+}
  
 
 html, body {
@@ -39,7 +39,7 @@ body {
 
 .title-container {
   font-weight: bold;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

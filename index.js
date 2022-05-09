@@ -1,6 +1,3 @@
-// const electron = require('electron');
-// const net = electron.net;
-
 let _showPassword = false;
 let _email = '';
 let _password = '';
@@ -26,5 +23,10 @@ togglePassword.addEventListener('click', function (event) {
 
 
 submitButton.addEventListener('click', function (event) {
-  window.test.login();
+  const body = {
+    email: _email,
+    password: _password,
+  }
+  window.test.login(body);
+
 });
